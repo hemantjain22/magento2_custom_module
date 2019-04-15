@@ -61,7 +61,6 @@ class ProductList extends \Magento\Catalog\Ui\DataProvider\Product\ProductDataPr
             $data
         );
         $collectionData = $productCollection->create()
-                                            // ->addFieldToFilter('type_id', ['in'=>['simple', 'virtual', 'downloadable']])
                                             ->addAttributeToSelect('name');
         $this->collection = $collectionData;
         $this->addFieldStrategies = $addFieldStrategies;
